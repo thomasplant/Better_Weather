@@ -1,3 +1,4 @@
+#Better Weather
 View the website at https://webhome.csc.uvic.ca/~thomasplant/
 
 This Website was designed and created as a project to learn how to use JavaScript and a small design process of a website.
