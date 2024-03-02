@@ -1,0 +1,184 @@
+/* Colours by Dracula
+
+background: #282a36
+yellow: #f1fa8c
+blue: #6272a4
+white: #f8f8f2
+orange: #ffb86c
+green: #50fa7b
+*/
+
+/* General formating */
+body {
+  background-color: #282a36;
+  color: #f8f8f2;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2{
+  text-align: left;
+  margin: 70px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+h4 {
+  margin-top: 50px;
+}
+
+/* Initial weather */
+#weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+#weather h3 {
+  font-size: 40px;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+#weather p {
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+ 
+}
+
+/* 7 day forcast  */
+#weekforcast {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+
+}
+
+#weekforcast div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #6272a4;
+  padding: 50px;
+  margin: 2px;
+}
+
+ /* 24 Hour forcast */
+#dayforcast div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #6272a4;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 3px;
+}
+
+#dayforcast p {
+  width: 100px;
+  /* font-size: 20px; */
+}
+
+#time {
+  font-size: 20px
+}
+
+/* Navigation Bar */
+.navigation {
+  position: fixed;
+  top: 0;
+  list-style: none;
+  padding: 0px;
+  background-color: #6272a4;
+
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.navigation a{
+  text-decoration: none;
+  padding: 13px;
+  margin: 2px;
+  color: #f8f8f2;
+}
+.navigation a:hover {
+  background-color: #282a36;
+}
+
+.navigation p{
+  text-decoration: none;
+  padding: 13px;
+  margin: 2px;
+  color: #f8f8f2;
+  margin-left: auto;
+}
+
+.navigation p:hover {
+  background-color: #282a36;
+}
+
+/* Just a little bit bigger margin to make the text look better on bigger screens */
+#about {
+  margin: 20px;
+  text-align: left;
+}
+
+a:link { 
+    color: #f8f8f2;
+}
+
+a:visited {
+  color: #f8f8f2;
+}
+
+a:hover{
+  color: #f1fa8c;
+}
+
+/* This deals with scaling */
+@media all and (max-width: 1000px) {
+  .navigation{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  }
+
+  #about {
+    margin: 20px;
+  }
+}
+
+@media all and (max-width: 650px){
+  .navigation{
+    flex-direction: column;
+    background-color: #282a36;
+  }
+  .navigation a {
+    text-align: center;
+    margin: 0px;
+    border-radius:10px;
+    border-color: #282a36;
+    border-style: solid;
+    background-color: #6272a4;
+  }
+
+/* About Page */ 
+#about { 
+    margin: 20px; 
+} 
+}
